@@ -1,0 +1,32 @@
+:root {
+  --color-th-orange: #ea5b0c;
+
+  --color-grey: #E8E8E8;
+  --color-grey-dark: hsl(0, 0%, 40%);
+  --color-white: #ffffff;
+  --color-darkest: #000;
+
+  --ff-primary: source-sans-3, Arial, Helvetica, sans-serif;
+  --ff-icons: material-icons;
+
+  --lh-tight: 100%;
+  --lh-normal: 130%;
+  --lh-loose: 150%;
+
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 600;
+
+  --xs: 10px;
+  --s: 12px;
+  --m: 16px;
+  --l: 20px;
+  --xl: 25px;
+  --xxl: 31.5px;
+  --xxxl: 40px;
+
+  --eighth: calc(var(--m) / 8);
+  --quarter: calc(var(--m) / 4);
+  --half: calc(var(--m) / 2);
+}
