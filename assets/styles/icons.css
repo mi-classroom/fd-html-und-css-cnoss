@@ -2,6 +2,7 @@
   display: inline-block;
   width: auto;
   height: auto;
+  margin-right: var(--xs);
   direction: ltr;
   font-family: var(--ff-icons);
   font-feature-settings: "liga";
@@ -16,22 +17,27 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
-  margin-right: var(--xs);
 }
 
 .has-icon::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--xs);
   display: flex;
-  align-items: center;
-  justify-self: center;
   width: auto;
   height: auto;
+  align-items: center;
+  content: "folder";
   direction: ltr;
   font-family: var(--ff-icons);
   font-feature-settings: "liga";
+  font-size: var(--xl);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
   font-weight: normal;
+  justify-self: center;
   letter-spacing: normal;
   line-height: inherit;
   text-rendering: optimizelegibility;
@@ -39,30 +45,24 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
-  content: "folder";
-  position: absolute;
-  top: 0;
-  left: var(--xs);
-  bottom: 0;
-  font-size: var(--xl);
 }
 
-.icon--s {
+.icon-s {
   font-size: var(--s);
   line-height: var(--s);
 }
 
-.icon--m {
+.icon-m {
   font-size: var(--m);
   line-height: var(--m);
 }
 
-.icon--l {
+.icon-l {
   font-size: var(--l);
   line-height: var(--l);
 }
 
-.icon--xl {
+.icon-xl {
   font-size: var(--xl);
   line-height: var(--xl);
 }
@@ -70,7 +70,7 @@
 .icon.md-dark { color: var(--lightest); }
 .icon.md-light { color: var(--darkest); }
 
-.icon--inline {
+.icon-inline {
   margin-right: var(--xs);
   font-size: var(--m);
 }
@@ -79,6 +79,6 @@
   content: attr(data-icon);
 }
 
-.icon--video::before { content: "smart_display"; }
-.icon--document::before { content: "description"; }
-.icon--folder::before { content: "folder"; }
+.icon-video::before { content: "smart_display"; }
+.icon-document::before { content: "description"; }
+.icon-folder::before { content: "folder"; }

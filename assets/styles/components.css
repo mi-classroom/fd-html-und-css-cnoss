@@ -3,10 +3,10 @@
 
 .grid-list{
   li{
-    background-color: var(--color-white);
-    margin-bottom: var(--s);
-    padding: var(--s);
     position: relative;
+    padding: var(--s);
+    margin-bottom: var(--s);
+    background-color: var(--color-white);
     line-height: var(--lh-tight);
   
     address{
@@ -33,9 +33,9 @@
 /* Hero
 ############################################################################ */
 .hero{
+  padding-bottom: var(--xxxl);
   background-color: var(--color-th-orange);
   color: var(--color-white);
-  padding-bottom: var(--xxxl);
 
   h2, h3{
     font-size: var(--xl);
@@ -51,11 +51,10 @@
 
 
 .card-grid{
-
   li{
-    background-color: var(--color-white);
-    margin-bottom: var(--m);
     padding-bottom: var(--quarter);
+    margin-bottom: var(--m);
+    background-color: var(--color-white);
 
     img{
       width: 100%;
@@ -86,10 +85,10 @@
 
 .tag-list{
   li{
-    background-color: var(--color-grey);
     display: inline-block;
     padding: var(--eighth) var(--half);
     margin-bottom: 0;
+    background-color: var(--color-grey);
     font-size: var(--s);
   }
 }
@@ -99,29 +98,28 @@
 ############################################################################ */
 
 .main-footer{
+  padding: var(--m);
   background-color: var(--color-grey-dark);
   color: var(--color-white);
-  padding: var(--m);
 
   h2{
-    font-size: var(--m);
     margin-bottom: var(--quarter);
+    font-size: var(--m);
   }
 
   ul{
-
     margin-bottom: var(--m);
 
     li{
       font-weight: var(--fw-light);
   
       &::before{
-        content: "»";
         margin-right: var(--half);
+        content: "»";
         font-size: var(--xl);
-        vertical-align: bottom;
-        line-height: 90%;
         font-weight: var(--fw-regular);
+        line-height: 90%;
+        vertical-align: bottom;
       }
     }
   }
@@ -137,7 +135,6 @@
   gap: var(--m);
 
   .logo{
-
     display: block;
     flex-grow: 2;
 
@@ -149,17 +146,17 @@
 }
 
 .main-menu-trigger{
+  border: none;
+  margin-right: var(--xs);
   background-color: var(--color-white);
   color: var(--color-white);
-  border: none;
   cursor: pointer;
-  margin-right: var(--xs);
 
   span{
     display: block;
-    background-color: var(--color-darkest);
     width: var(--xl);
     height: var(--eighth);
     margin-bottom: var(--quarter);
+    background-color: var(--color-darkest);
   }
 }

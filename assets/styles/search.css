@@ -1,5 +1,4 @@
 .keyword-search {
-
   display: flex;
 
   &:has(input:focus, input:focus-visible, input:focus-within){
@@ -7,9 +6,9 @@
   }
 
   input{
-    border: none;
-    padding: var(--half) var(--xs);
     flex-grow: 2;
+    padding: var(--half) var(--xs);
+    border: none;
     
     &:focus, &:focus-visible, &:focus-within{
       border: none;
@@ -18,10 +17,10 @@
   }
 
   button{
+    padding: var(--s);
+    border: none;
     background-color: var(--color-white);
     color: var(--color-white);
-    border: none;
-    padding: var(--s);
     cursor: pointer;
 
     .icon{

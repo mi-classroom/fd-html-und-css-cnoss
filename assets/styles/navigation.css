@@ -3,11 +3,10 @@
 
 .main-navigation{
   display: flex;
-  gap: var(--m);
   align-items: center;
+  gap: var(--m);
 
   .logo{
-
     display: block;
     flex-grow: 2;
 
@@ -17,8 +16,7 @@
     
   }
 
-  @media only screen and (min-width: 50rem) {
-
+  @media only screen and (width >= 50rem) {
     & > * {
       flex-grow: 1;
     
@@ -27,21 +25,21 @@
 }
 
 .main-menu-trigger{
+  border: none;
+  margin-right: var(--xs);
   background-color: var(--color-white);
   color: var(--color-white);
-  border: none;
   cursor: pointer;
-  margin-right: var(--xs);
 
   span{
     display: block;
-    background-color: var(--color-darkest);
     width: var(--xl);
     height: var(--eighth);
     margin-bottom: var(--quarter);
+    background-color: var(--color-darkest);
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (width >= 600px) {
     display: none;
   }
 }
@@ -53,7 +51,7 @@
   display: none;
   gap: var(--l);
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (width >= 600px) {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -65,9 +63,7 @@
 ############################################################################ */
 
 .lang-selector{
-
   li{
-
     &[data-selected="true"]{
       display: block;
     }

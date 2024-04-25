@@ -1,8 +1,8 @@
 html, body{
   font-family: var(--ff-primary);
   font-size: var(--m);
-  line-height: var(--lh-normal);
   hyphens: auto;
+  line-height: var(--lh-normal);
 }
 
 main{
@@ -15,8 +15,8 @@ main > * {
 
 h1, h2, h3, h4{
   padding-top: var(--m);
-  font-weight: var(--fw-bold);
   margin-bottom: var(--m);
+  font-weight: var(--fw-bold);
   hyphens: none;
 }
 
