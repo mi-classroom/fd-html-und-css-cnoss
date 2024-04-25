@@ -1,0 +1,21 @@
+
+/* Tag List
+############################################################################ */
+
+.tag-list {
+  li {
+    display: inline-block;
+    padding: var(--eighth) var(--half);
+    margin-bottom: 0;
+    margin-bottom: var(--eighth);
+    background-color: var(--color-grey);
+    font-size: var(--s);
+    transition: all var(--tr-fast);
+
+    &:hover {
+      background-color: var(--color-grey-dark);
+      color: var(--color-white);
+      cursor: pointer;
+    }
+  }
+}

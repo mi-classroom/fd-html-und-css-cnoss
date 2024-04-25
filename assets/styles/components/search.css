@@ -1,3 +1,4 @@
+
 .keyword-search {
   display: flex;
   flex-grow: 2;
@@ -35,12 +36,14 @@
 ############################################################################ */
 
 main{
+  /* stylelint-disable-next-line no-descending-specificity */
   .keyword-search{
     display: flex;
   }
 }
 
 .main-header{
+  /* stylelint-disable-next-line no-descending-specificity */
   .keyword-search{
     display: none;
 
@@ -49,7 +52,6 @@ main{
     }
   }
 }
-
 
 @media only screen and (width >= 50rem) {
   main{

@@ -1,0 +1,31 @@
+/* Main Footer
+############################################################################ */
+
+.main-footer {
+  max-width: var(--max-content-width);
+  background-color: var(--color-grey-dark);
+  color: var(--color-white);
+
+  h2 {
+    margin-bottom: var(--quarter);
+    font-size: var(--m);
+  }
+
+  ul {
+    margin-bottom: var(--m);
+
+    li {
+      font-weight: var(--fw-light);
+
+      &::before {
+        margin-right: var(--half);
+        content: "»";
+        font-size: var(--xl);
+        font-weight: var(--fw-regular);
+        line-height: 90%;
+        vertical-align: bottom;
+      }
+    }
+  }
+
+}
