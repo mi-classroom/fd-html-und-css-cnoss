@@ -1,6 +1,7 @@
 .keyword-search {
   display: flex;
-
+  flex-grow: 2;
+  
   &:has(input:focus, input:focus-visible, input:focus-within){
     outline: solid 1px var(--color-th-orange);
   }
@@ -17,42 +18,49 @@
   }
 
   button{
-    padding: var(--s);
+    padding: var(--half);
     border: none;
-    background-color: var(--color-white);
+    background-color: var(--color-th-orange);
     color: var(--color-white);
     cursor: pointer;
 
     .icon{
       margin-right: 0;
-      color: var(--color-darkest);
+      color: var(--color-white);
     }
   }
+}
 
-  &.for-large-viewports{
+/* Responsive Visibility
+############################################################################ */
+
+main{
+  .keyword-search{
+    display: flex;
+  }
+}
+
+.main-header{
+  .keyword-search{
     display: none;
-  }
 
-  @media screen and (width >= 40em){
-    &.for-large-viewports{
-      display: block;
-
-      input{
-        background-color: var(--color-grey-dark);;
-      }
-
-      button{
-        background-color: var(--color-th-orange);
-      }
-      
+    input{
+      background-color: var(--color-grey);
     }
+  }
+}
 
-    &.for-small-viewports{
+
+@media only screen and (width >= 50rem) {
+  main{
+    .keyword-search{
       display: none;
     }
   }
 
-
-
+  .main-header{
+    .keyword-search{
+      display: flex;
+    }
+  }
 }
-

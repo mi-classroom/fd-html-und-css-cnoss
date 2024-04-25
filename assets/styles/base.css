@@ -2,17 +2,27 @@ html, body{
   background-color: var(--color-grey);
   font-family: var(--ff-primary);
   font-size: var(--m);
+  font-weight: var(--fw-regular);
   hyphens: auto;
   line-height: var(--lh-normal);
 }
 
+
 main{
-  max-width: 80rem;
-  margin: 0 auto;
+  padding-bottom: var(--l);
+
+  @media only screen and (width >= 160ch) {
+    padding-top: var(--m);
+  }
 }
 
-main > * {
-  padding: var(--m);
+main > *:not(.hero) {
+  padding: var(--m) 0;
+
+  @media only screen and (width <= 160ch) {
+    padding: var(--m);
+  }
+
 }
 
 h1, h2, h3, h4{
@@ -30,3 +40,15 @@ p{
   margin-bottom: var(--s);
 }
 
+a{
+  color: var(--color-black);
+  font-weight: var(--fw-medium);
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
+  }
+}

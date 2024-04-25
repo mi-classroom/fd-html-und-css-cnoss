@@ -13,6 +13,7 @@
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-bold: 600;
+<<<<<<< Updated upstream
   --basefont-size: 1rem;
   --xs: calc(var(--basefont-size) * 0.65);
   --s: calc(var(--basefont-size) * 0.8);
@@ -25,4 +26,26 @@
   --quarter: calc(var(--m) / 4);
   --half: calc(var(--m) / 2);
   --grid-item-size-max: 300px;
+=======
+
+  --basefont-size: 1rem;
+  --xs: calc(var(--basefont-size) * 0.4);
+  --s: calc(var(--basefont-size) * 0.65);
+  --m: calc(var(--basefont-size) * 1);
+  --l: calc(var(--basefont-size) * 1.4);
+  --xl: calc(var(--basefont-size) * 1.9);
+  --xxl: calc(var(--basefont-size) * 2.6);
+  --xxxl: calc(var(--basefont-size) * 3.4);
+
+  --eighth: calc(var(--m) / 8);
+  --quarter: calc(var(--m) / 4);
+  --half: calc(var(--m) / 2);
+
+  --tr-fast: 0.3s;
+  --tr-normal: 0.6s;
+  --tr-slow: 1s;
+
+  --max-text-width: 90ch;
+  --max-content-width: 160ch;
+>>>>>>> Stashed changes
 }

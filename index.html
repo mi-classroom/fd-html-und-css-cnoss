@@ -13,16 +13,28 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation"> 
+    <nav class="main-navigation">
       <a href="/" class="logo">
         <h1><img src="./assets/images/projectsurvival-logo.svg" alt="ProjectSurvival4All Logo"></h1>
       </a>
-      <div>
-        <form class="keyword-search for-large-viewports">
-          <input type="search" id="search" name="search" placeholder="Suchen">
-          <button type="submit"><span class="icon icon--l">search</span></button>
-        </form>
-      </div>
+
+      <form class="keyword-search">
+        <input type="search" id="search" name="search" placeholder="Suchen">
+        <button type="submit"><span class="icon icon--l">search</span></button>
+      </form>
+
+      <ul class="main-menu">
+        <li><a href="./news.html">News</a></li>
+        <li><a href="./pages/about/about-the-lecturers.html">Barrierefreiheit</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li>
+          <ul class="lang-selector dropdown">
+            <li data-selected="true"><a href="#">DE</a></li>
+            <li><a href="#">EN</a></li>
+          </ul>
+        </li>
+      </ul>
+
       <button class="main-menu-trigger">
         <span></span>
         <span></span>
@@ -33,40 +45,44 @@
 
   <main>
 
-    <div>
-      <form class="keyword-search for-small-viewports">
-        <input type="search" id="search" name="search" placeholder="Suchen">
-        <button type="submit"><span class="icon icon--l">search</span></button>
-      </form>
-    </div>
+    <form class="keyword-search">
+      <input type="search" id="search" name="search" placeholder="Suchen">
+      <button type="submit"><span class="icon icon--l">search</span></button>
+    </form>
 
-    <section id="welcome" class="hero" >
+    <section id="welcome" class="hero">
       <h2>Willkommen</h2>
-      <p>In der Bearbeitung von Projekten ist es von entscheidender Bedeutung, nicht nur theoretisches Wissen zu besitzen, sondern auch praxiserprobte Methoden, bewährte Tricks und den souveränen Umgang mit müglichen Stolpersteinen zu beherrschen. Hier setzt ProjectSurvival4All an, eine innovative Plattform in Zusammenarbeit mit der TH Köln, die entwickelt wurde, um dich und dein Team bei Projektarbeiten und im Studium optimal zu unterstützen. Hier erwarten dich erstklassige Inhalte von erfahrenen Dozenten, die dir Best Practices und kuratiertes Wissen auf eine interessante und effiziente Weise vermitteln. Schau einfach mal vorbei und entdecke, wie ProjectSurvival4All deine Projekterfahrung auf das nächste Level heben kann.</p>
+      <p>In der Bearbeitung von Projekten ist es von entscheidender Bedeutung, nicht nur theoretisches Wissen zu
+        besitzen, sondern auch praxiserprobte Methoden, bewährte Tricks und den souveränen Umgang mit müglichen
+        Stolpersteinen zu beherrschen. Hier setzt ProjectSurvival4All an, eine innovative Plattform in Zusammenarbeit
+        mit der TH Köln, die entwickelt wurde, um dich und dein Team bei Projektarbeiten und im Studium optimal zu
+        unterstützen. Hier erwarten dich erstklassige Inhalte von erfahrenen Dozenten, die dir Best Practices und
+        kuratiertes Wissen auf eine interessante und effiziente Weise vermitteln. Schau einfach mal vorbei und entdecke,
+        wie ProjectSurvival4All deine Projekterfahrung auf das nächste Level heben kann.</p>
 
       <a href="./pages/about/about-the-project.html">Mehr erfahren</a>
     </section>
 
     <section>
       <h2>Favoriten</h2>
-      <ul class="item-list is-grid">
-        <li class="has-icon icon--document">    
-          <p>Wie baue ich eine Präsentation auf? Wie baue ich eine Präsentation auf? Wie baue ich eine Präsentation auf?</p>
+      <ul class="grid-list">
+        <li class="has-icon icon--document">
+          <p>Wie baue ich eine Präsentation auf?</p>
           <address>Monika Engelen</address>
         </li>
-        <li class="has-icon icon--video"> 
+        <li class="has-icon icon--video">
           <p>Wie erstelle ich eine Agenda?</p>
           <address>Raphaela Groten</address>
         </li>
-        <li class="has-icon icon--video"> 
+        <li class="has-icon icon--video">
           <p>Wie priorisiere ich (ein Backlog)?</p>
           <address>Raphaela Groten</address>
         </li>
-        <li class="has-icon icon--video"> 
+        <li class="has-icon icon--video">
           <p>Wie halte ich einen Pitch?</p>
           <address>Monika Engelen</address>
         </li>
-        <li class="has-icon icon--document"> 
+        <li class="has-icon icon--document">
           <p>Wie baue ich eine Präsentation auf?</p>
           <address>Raphaela Groten</address>
         </li>
@@ -75,7 +91,7 @@
 
     <section>
       <h2>Von deinem ILU Schreibtisch</h2>
-      <ul class="item-list is-inline">
+      <ul class="grid-list-inline">
         <li><span class="icon icon--l">folder</span>Datenbanken 1</li>
         <li><span class="icon icon--l">folder</span>Kommunikationstechnik und Netze</li>
         <li><span class="icon icon--l">folder</span>Paradigmen der Programmierung</li>
@@ -88,6 +104,7 @@
 
     <section>
       <h2>Verlauf</h2>
+
       <ul class="card-grid">
 
         <li>
@@ -242,7 +259,7 @@
       <li>leichte Sprache</li>
       <li>Kontrast</li>
     </ul>
-    
+
     <h2>Rechtliche Informationen</h2>
     <ul>
       <li>Verantwortliche</li>
