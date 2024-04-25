@@ -1,11 +1,26 @@
 /* Grid List
 ############################################################################ */
 
-.grid-list{
+.item-list{
+  &.is-grid{
+    display: grid;
+    gap: var(--m);
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(var(--grid-item-size-max), 1fr));
+  }
+
+  &.is-inline{
+    li{
+      display: inline-block;
+      margin-right: var(--s);
+      margin-bottom: var(--s);
+      
+    }
+  }
+  
   li{
     position: relative;
     padding: var(--s);
-    margin-bottom: var(--s);
     background-color: var(--color-white);
     line-height: var(--lh-tight);
   
@@ -28,6 +43,7 @@
 ############################################################################ */
 .main-header{
   padding: var(--m);
+  background-color: var(--color-white);
 }
 
 /* Hero
@@ -51,6 +67,11 @@
 
 
 .card-grid{
+  display: grid;
+  gap: var(--m);
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(calc(var(--grid-item-size-max) * 1.5), 1fr));
+
   li{
     padding-bottom: var(--quarter);
     margin-bottom: var(--m);

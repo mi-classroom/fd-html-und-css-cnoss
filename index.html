@@ -7,6 +7,7 @@
   <title>ProjectSurvival4All – Survival-Tipps für die Projektarbeit</title>
 
   <link rel="stylesheet" href="./assets/styles/main.css">
+  <link rel="stylesheet" href="./assets/styles/index.css">
 
 </head>
 
@@ -16,7 +17,12 @@
       <a href="/" class="logo">
         <h1><img src="./assets/images/projectsurvival-logo.svg" alt="ProjectSurvival4All Logo"></h1>
       </a>
-
+      <div>
+        <form class="keyword-search for-large-viewports">
+          <input type="search" id="search" name="search" placeholder="Suchen">
+          <button type="submit"><span class="icon icon--l">search</span></button>
+        </form>
+      </div>
       <button class="main-menu-trigger">
         <span></span>
         <span></span>
@@ -28,9 +34,9 @@
   <main>
 
     <div>
-      <form class="keyword-search">
+      <form class="keyword-search for-small-viewports">
         <input type="search" id="search" name="search" placeholder="Suchen">
-        <button type="submit"><span class="icon icon-l">search</span></button>
+        <button type="submit"><span class="icon icon--l">search</span></button>
       </form>
     </div>
 
@@ -43,24 +49,24 @@
 
     <section>
       <h2>Favoriten</h2>
-      <ul class="grid-list">
-        <li class="has-icon icon-document">    
-          <p>Wie baue ich eine Präsentation auf?</p>
+      <ul class="item-list is-grid">
+        <li class="has-icon icon--document">    
+          <p>Wie baue ich eine Präsentation auf? Wie baue ich eine Präsentation auf? Wie baue ich eine Präsentation auf?</p>
           <address>Monika Engelen</address>
         </li>
-        <li class="has-icon icon-video"> 
+        <li class="has-icon icon--video"> 
           <p>Wie erstelle ich eine Agenda?</p>
           <address>Raphaela Groten</address>
         </li>
-        <li class="has-icon icon-video"> 
+        <li class="has-icon icon--video"> 
           <p>Wie priorisiere ich (ein Backlog)?</p>
           <address>Raphaela Groten</address>
         </li>
-        <li class="has-icon icon-video"> 
+        <li class="has-icon icon--video"> 
           <p>Wie halte ich einen Pitch?</p>
           <address>Monika Engelen</address>
         </li>
-        <li class="has-icon icon-document"> 
+        <li class="has-icon icon--document"> 
           <p>Wie baue ich eine Präsentation auf?</p>
           <address>Raphaela Groten</address>
         </li>
@@ -69,220 +75,159 @@
 
     <section>
       <h2>Von deinem ILU Schreibtisch</h2>
-      <ul class="grid-list">
-        <li><span class="icon icon-l">folder</span>Datenbanken 1</li>
-        <li><span class="icon icon-l">folder</span>Kommunikationstechnik und Netze</li>
-        <li><span class="icon icon-l">folder</span>Paradigmen der Programmierung</li>
-        <li><span class="icon icon-l">folder</span>Audiovisuelles Medienprojekt</li>
-        <li><span class="icon icon-l">folder</span>Grundlagen des Web</li>
-        <li><span class="icon icon-l">folder</span>Screendesign</li>
-        <li><span class="icon icon-l">folder</span>Mensch-Computer Interaktion</li>
+      <ul class="item-list is-inline">
+        <li><span class="icon icon--l">folder</span>Datenbanken 1</li>
+        <li><span class="icon icon--l">folder</span>Kommunikationstechnik und Netze</li>
+        <li><span class="icon icon--l">folder</span>Paradigmen der Programmierung</li>
+        <li><span class="icon icon--l">folder</span>Audiovisuelles Medienprojekt</li>
+        <li><span class="icon icon--l">folder</span>Grundlagen des Web</li>
+        <li><span class="icon icon--l">folder</span>Screendesign</li>
+        <li><span class="icon icon--l">folder</span>Mensch-Computer Interaktion</li>
       </ul>
     </section>
 
     <section>
       <h2>Verlauf</h2>
       <ul class="card-grid">
+
         <li>
-            <figure>
-              <img src="./images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
-              <figcaption>
-                <h3>Wie baue ich eine Präsentation auf?</h3>
-                <address>Monika Engelen</address>
-                <ul class="tag-list">
-                  <li>Präsentation</li>
-                  <li>PPT</li>
-                  <li>Vortrag</li>
-                </ul>
-              </figcaption>
-            </figure>
-        </li>
-        <li class="is-hidden">
-          <article>
-            <header>
-              <time datetime="2024-02-02T04:14:54-08:00">02. Februar 2024</time>
-              <h3>Wie validiere ich meine Geschäftsidee, bevor ich ein Startup gründe?</h3>
-              <p>von <strong>Max Mustermann</strong></p>
-            </header>
-            <figure>
-              <img src="./images/business-idea.jpg" alt="Validierung einer Geschäftsidee">
-              <figcaption>Methoden und Ansätze zur Validierung einer Geschäftsidee</figcaption>
-            </figure>
-            <p>Methoden und Ansätze zur Bewertung und Validierung einer Geschäftsidee, um deren Marktchancen, Kundenbedürfnisse und Rentabilität zu prüfen, bevor man ein Startup gründet.</p>
-            <section>
-              <h3>Projektphase</h3>
-              <ul>
-                <li>Projektstart</li>
-              </ul>
-            </section>
-            <section>
-              <h3>Tags</h3>
-              <ul>
-                <li>Überzeugen</li>
-                <li>Pitch</li>
+          <figure>
+            <img src="./images/praesentation-aufbau.jpg" alt="Präsentation Aufbau">
+            <figcaption>
+              <h3>Wie baue ich eine Präsentation auf?</h3>
+              <address>Monika Engelen</address>
+              <ul class="tag-list">
+                <li>Präsentation</li>
+                <li>PPT</li>
                 <li>Vortrag</li>
-                <li>Startup</li>
               </ul>
-            </section>
-          </article>
+            </figcaption>
+          </figure>
         </li>
-        <li class="is-hidden">
-          <article>
-            <header>
-              <time datetime="2024-02-02T04:14:54-08:00">02. Februar 2024</time>
+
+        <li>
+          <figure>
+            <img src="./images/idea.webp" alt="Idee verproben">
+            <figcaption>
+              <h3>Wie validiere ich meine Geschäftsidee, bevor ich ein Startup gründe?</h3>
+              <address>Max Mustermann</address>
+              <div class="tag-list-wrapper">
+                <ul class="tag-list">
+                  <li>Minimum Viable Product (MVP)</li>
+                  <li>Pivot</li>
+                  <li>Validated Learning</li>
+                  <li>Build-Measure-Learn</li>
+                  <li>Customer Development</li>
+                  <li>Lean Canvas</li>
+                  <li>Continuous Deployment</li>
+                  <li>A/B Testing</li>
+                  <li>Lean Metrics</li>
+                  <li>Bootstrapping</li>
+                </ul>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <figure>
+            <img src="./images/stressed.jpg" alt="Stress im Studium">
+            <figcaption>
               <h3>Wie bewältige ich Stress?</h3>
-              <p>von <strong>Max Mustermann</strong></p>
-            </header>
-            <figure>
-              <img src="./images/stress-managment.jpg" alt="Stressbewältigung">
-              <figcaption>Strategien und Techniken zur Bewältigung von Stress</figcaption>
-            </figure>
-            <p>Strategien und Techniken zur Bewältigung von Stress, einschließlich Zeitmanagement, Entspannungsübungen, Priorisierung von Aufgaben und Kommunikationstechniken.</p>
-            <section>
-              <h3>Projektphasen</h3>
-              <ul>
-                <li>Projektstart</li>
-                <li>Projektabschluss</li>
-                <li>Projektplanung</li>
-              </ul>
-            </section>
-            <section>
-              <h3>Tags</h3>
-              <ul>
-                <li>Stress</li>
-                <li>Bewältigung</li>
-                <li>Gesundheit</li>
-              </ul>
-            </section>
-          </article>
+              <address>Max Mustermann</address>
+
+              <div class="tag-list-wrapper">
+                <ul class="tag-list">
+                  <li>Stress</li>
+                  <li>Bewältigung</li>
+                  <li>Gesundheit</li>
+                </ul>
+              </div>
+
+            </figcaption>
+          </figure>
         </li>
-        <li class="is-hidden">
-          <article>
-            <header>
-              <time datetime="2024-02-02T04:14:54-08:00">02. Februar 2024</time>
+
+        <li>
+          <figure>
+            <img src="./images/rednerin-praesentation.jpg" alt="Techniken zur Verbesserung der Teamarbeit">
+            <figcaption>
               <h3>Welche Techniken verbessern die Zusammenarbeit in einem Team?</h3>
-              <p>von <strong>Monika Engelen</strong></p>
-            </header>
-            <figure>
-              <img src="./images/rednerin-praesentation.jpg" alt="Techniken zur Verbesserung der Teamarbeit">
-              <figcaption>Eine Untersuchung verschiedener Techniken zur Verbesserung der Teamarbeit</figcaption>
-            </figure>
-            <p>Eine Untersuchung verschiedener Techniken und Ansätze, um die Zusammenarbeit und Effizienz in einem Team zu verbessern, wie z.B. agile Methoden, regelmäßige Feedback-Sitzungen und klare Kommunikationskanäle.</p>
-            <section>
-              <h3>Projektphasen</h3>
-              <ul>
-                <li>Projektstart</li>
-                <li>Projektabschluss</li>
-              </ul>
-            </section>
-            <section>
-              <h3>Tags</h3>
-              <ul>
+              <address>Monika Engelen</address>
+              <ul class="tag-list">
                 <li>Überzeugen</li>
                 <li>Gruppenarbeit</li>
                 <li>Vortrag</li>
                 <li>Startup</li>
               </ul>
-            </section>
-          </article>
+            </figcaption>
+          </figure>
         </li>
-        <li class="is-hidden">
-          <article>
-            <header>
-              <time datetime="2024-02-02T04:14:54-08:00">02. Februar 2024</time>
-              <h3>Wie baue ich eine Präsentation auf?</h3>
-              <p>Autor: <strong>Monika Engelen</strong></p>
-            </header>
-            <img src="./images/praesentation-aufbau.jpg" alt="Präsentationsaufbau">
-            <p>Eine Anleitung zum strukturierten Aufbau einer Präsentation, einschließlich der Festlegung von Zielen, Auswahl relevanter Inhalte, Gestaltung von Visuals und Präsentationstechniken.</p>
-            <section>
-              <h3>Projektphasen</h3>
-              <ul>
-                <li>Projektstart</li>
-                <li>Projektabschluss</li>
-              </ul>
-            </section>
-            <section>
-              <h3>Tags</h3>
-              <ul>
+
+        <li>
+          <figure>
+            <img src="./images/presentation.jpg" alt="Präsentationsaufbau">
+            <figcaption>
+              <h3>Wie bleibt mein Pitch in positiver Erinnerung?</h3>
+              <address>Monika Engelen</address>
+              <ul class="tag-list">
                 <li>Präsentation</li>
-                <li>PPT</li>
+                <li>Flexen</li>
                 <li>Vortrag</li>
+                <li>Pitch</li>
+                <li>Startup</li>
+                <li>Business</li>
+                <li>Elevator</li>
+                <li>Rethorik</li>
               </ul>
-            </section>
-            <section>
-              <h3>Ähnliche Artikel</h3>
-              <ul>
-                <li><a href="articles/wie-halte-ich-einen-pitch.md">Wie halte ich einen Pitch?</a></li>
-              </ul>
-            </section>
-          </article>
+            </figcaption>
+          </figure>
         </li>
-        <li class="is-hidden">
-          <article>
-            <header>
-              <time datetime="2024-02-02T04:14:54-08:00">02. Februar 2024</time>
-              <h3>Wie priorisiere ich (ein Backlog)?</h3>
-              <p>Autorin: <strong>Raphaela Groten</strong></p>
-            </header>
+
+        <li>
+          <figure>
             <img src="./images/th-koln-header.jpg" alt="Priorisierung eines Backlogs">
-            <p>Techniken und Ansätze zur Priorisierung von Aufgaben und Projekten in einem Backlog, um die Effizienz und den Nutzen zu maximieren.</p>
-            <section>
-              <h3>Projektphase</h3>
-              <ul>
-                <li>Projektstart</li>
-              </ul>
-            </section>
-            <section>
-              <h3>Tags</h3>
-              <ul>
+            <figcaption>
+              <h3>Wie priorisiere ich (ein Backlog)?</h3>
+              <address>Raphaela Groten</address>
+              <ul class="tag-list">
                 <li>Scrum</li>
                 <li>Backlog</li>
                 <li>ProductOwner</li>
                 <li>Prioritäten</li>
                 <li>Ziele</li>
               </ul>
-            </section>
-          </article>
+            </figcaption>
+          </figure>
         </li>
-        <li class="is-hidden">
-          <article>
-            <header>
-              <time datetime="2024-02-02T04:14:54-08:00">02. Februar 2024</time>
-              <h3>Wie organisiere ich mein Lernen?</h3>
-              <p>Autor: <strong>Monika Engelen</strong></p>
-            </header>
+        <li>
+
+          <figure>
             <img src="./images/lernen-organisieren.jpg" alt="Organisation des Lernens">
-            <p>Methoden und Werkzeuge zur effektiven Organisation und Planung des Lernprozesses, einschließlich Zeitmanagement, Auswahl von Lernmaterialien und Nutzung von Lernstrategien.</p>
-            <section>
-              <h3>Projektphasen</h3>
-              <ul>
-                <li>Projektstart</li>
-                <li>Projektabschluss</li>
-              </ul>
-            </section>
-            <section>
-              <h3>Tags</h3>
-              <ul>
+            <figcaption>
+              <h3>Wie organisiere ich mein Lernen effektiv?</h3>
+              <address>Monika Engelen</address>
+              <ul class="tag-list">
                 <li>Lernen</li>
                 <li>Selbstoptimierung</li>
               </ul>
-            </section>
-          </article>
+            </figcaption>
+          </figure>
         </li>
+
         <li>
           <figure>
             <img src="./images/team-kommunikation.jpg" alt="Effektive Teamkommunikation">
-              <figcaption>
-                <h3>Wie fördere ich effektive Kommunikation im Team?</h3>
-                <address>Monika Engelen</address>
-                <ul class="tag-list">
-                  <li>Überzeugen</li>
-                  <li>Pitch</li>
-                  <li>Vortrag</li>
-                  <li>Startup</li>
-                </ul>
-              </figcaption>
+            <figcaption>
+              <h3>Wie fördere ich effektive Kommunikation im Team?</h3>
+              <address>Monika Engelen</address>
+              <ul class="tag-list">
+                <li>Überzeugen</li>
+                <li>Pitch</li>
+                <li>Vortrag</li>
+                <li>Startup</li>
+              </ul>
+            </figcaption>
           </figure>
         </li>
       </ul>

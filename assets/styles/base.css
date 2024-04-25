@@ -1,4 +1,5 @@
 html, body{
+  background-color: var(--color-grey);
   font-family: var(--ff-primary);
   font-size: var(--m);
   hyphens: auto;
@@ -6,7 +7,8 @@ html, body{
 }
 
 main{
-  background-color: var(--color-grey);
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 main > * {

@@ -29,5 +29,30 @@
     }
   }
 
+  &.for-large-viewports{
+    display: none;
+  }
+
+  @media screen and (width >= 40em){
+    &.for-large-viewports{
+      display: block;
+
+      input{
+        background-color: var(--color-grey-dark);;
+      }
+
+      button{
+        background-color: var(--color-th-orange);
+      }
+      
+    }
+
+    &.for-small-viewports{
+      display: none;
+    }
+  }
+
+
 
 }
+

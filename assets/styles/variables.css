@@ -24,4 +24,5 @@
   --eighth: calc(var(--m) / 8);
   --quarter: calc(var(--m) / 4);
   --half: calc(var(--m) / 2);
+  --grid-item-size-max: 300px;
 }
