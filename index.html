@@ -7,7 +7,9 @@
   <title>ProjectSurvival4All – Survival-Tipps für die Projektarbeit</title>
 
   <link rel="stylesheet" href="./assets/styles/main.css">
-  
+
+  <script src="./assets/scripts/main.js" defer></script>
+
 </head>
 
 <body>
@@ -22,7 +24,7 @@
         <button type="submit"><span class="icon icon-l">search</span></button>
       </form>
 
-      <ul class="main-menu">
+      <ul class="main-menu" data-js-menu>
         <li><a href="./news.html">News</a></li>
         <li><a href="./pages/about/about-the-lecturers.html">Barrierefreiheit</a></li>
         <li><a href="./login.html">Login</a></li>
@@ -34,10 +36,8 @@
         </li>
       </ul>
 
-      <button class="main-menu-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="main-menu-trigger" data-js-menu-trigger>
+        <span class="icon icon-l">menu</span>
       </button>
     </nav>
   </header>
@@ -70,7 +70,8 @@
           <address>Monika Engelen</address>
         </li>
         <li class="has-icon icon-video">
-          <p>Was sind die Schritte, die ich befolgen muss, um effektiv eine detaillierte Agenda für ein bevorstehendes Meeting oder eine Veranstaltung zu erstellen?</p>
+          <p>Was sind die Schritte, die ich befolgen muss, um effektiv eine detaillierte Agenda für ein bevorstehendes
+            Meeting oder eine Veranstaltung zu erstellen?</p>
           <address>Raphaela Groten</address>
         </li>
         <li class="has-icon icon-video">
@@ -127,7 +128,7 @@
             <figcaption>
               <h3>Wie validiere ich meine Geschäftsidee, bevor ich ein Startup gründe?</h3>
               <address>Max Mustermann</address>
-              <div class="tag-list-wrapper">
+              <div class="tag-list-wrapper" draggable="true">
                 <ul class="tag-list">
                   <li>Minimum Viable Product (MVP)</li>
                   <li>Pivot</li>
@@ -253,27 +254,34 @@
   </main>
 
   <footer class="main-footer">
-    <h2>Barrierefreiheit</h2>
-    <ul>
-      <li>leichte Sprache</li>
-      <li>Kontrast</li>
-    </ul>
+    <div>
+      <h2>Barrierefreiheit</h2>
+      <ul>
+        <li>leichte Sprache</li>
+        <li>Kontrast</li>
+      </ul>
+    </div>
 
-    <h2>Rechtliche Informationen</h2>
-    <ul>
-      <li>Verantwortliche</li>
-      <li>Impressum</li>
-      <li>Datenschutzhinweise</li>
-    </ul>
+    <div class="hero is-green">
+      <h2>Rechtliche Informationen</h2>
+      <ul>
+        <li>Verantwortliche</li>
+        <li>Impressum</li>
+        <li>Datenschutzhinweise</li>
+      </ul>
+    </div>
 
-    <h2>Feedback</h2>
-    <ul>
-      <li>Verbesserungsvorschläge</li>
-      <li>Content Vorschläge</li>
-      <li>Feedback Umfrage</li>
-    </ul>
+    <div>
+      <h2>Feedback</h2>
+      <ul>
+        <li>Verbesserungsvorschläge</li>
+        <li>Content Vorschläge</li>
+        <li>Feedback Umfrage</li>
+      </ul>
+    </div>
   </footer>
 
+  
 </body>
 
 </html>

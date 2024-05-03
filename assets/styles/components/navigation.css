@@ -1,45 +1,38 @@
 /* Main Navigation
 ############################################################################ */
 
-.main-navigation{
+.main-navigation {
   display: flex;
   align-items: center;
   gap: var(--m);
 
-  .logo{
+  .logo {
     display: block;
     flex-grow: 2;
 
-    img{
+    img {
       height: 50px;
     }
-    
+
   }
 
-  @media only screen and (width >= 50rem) {
-    & > * {
+  @media only screen and (width >=50rem) {
+    &>* {
       flex-grow: 1;
-    
+
     }
   }
 }
 
-.main-menu-trigger{
+.main-menu-trigger {
   border: none;
   margin-right: var(--xs);
   background-color: var(--color-white);
-  color: var(--color-white);
+  color: var(--color-black);
   cursor: pointer;
 
-  span{
-    display: block;
-    width: var(--xl);
-    height: var(--eighth);
-    margin-bottom: var(--quarter);
-    background-color: var(--color-darkest);
-  }
 
-  @media only screen and (width >= 600px) {
+  @media only screen and (width >=600px) {
     display: none;
   }
 }
@@ -47,33 +40,55 @@
 /* Main Menü
 ############################################################################ */
 
-.main-menu{
+.main-menu {
   display: none;
   gap: var(--l);
 
-  @media only screen and (width >= 600px) {
+  @media only screen and (width >=600px) {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
+
+  @media only screen and (width < 600px) {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    padding: var(--xl);
+    background-color: var(--color-grey);
+    gap: var(--l);
+    transform: translateX(-100%);
+    transition: transform var(--tr-fast);
+
+    &.is-active {
+      transform: translateX(0);
+    }
+
+  }
+
 }
 
 
 /* Lang Selector
 ############################################################################ */
 
-.lang-selector{
-  li{
-    &[data-selected="true"]{
+.lang-selector {
+  li {
+    &[data-selected="true"] {
       display: block;
     }
 
-    &:not([data-selected="true"]){
+    &:not([data-selected="true"]) {
       display: none;
     }
   }
 
-  &::after{
+  &::after {
     content: "expand_more"
   }
 

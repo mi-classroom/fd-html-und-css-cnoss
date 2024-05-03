@@ -19,3 +19,25 @@
     }
   }
 }
+
+/* Tag List Wrapper
+############################################################################ */
+
+.tag-list-wrapper{
+  position: relative;
+  overflow: hidden;
+
+  &::after{
+    position: sticky;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    width: 20px;
+    background: linear-gradient(90deg, rgb(255 255 255 / 0%) 55%, rgb(255 255 255 / 100%) 100%);
+    content: "";
+  }
+
+  .tag-list{
+    width: max-content;
+  }
+}
